@@ -322,423 +322,423 @@ factories_sql = '''insert overwrite into supply_chain_network_optimization_db.en
     select
             1000 as id
         ,   '_Factory_1_' as name
-        ,   39.798363 as latitude
-        ,   -89.654961 as longitude
-        ,   to_geography('POINT (-89.654961 39.798363)') as long_lat
-        ,   'Springfield' as city
-        ,   'Illinois' as state
-        ,   'United States' as country
-        ,   7000 as production_capacity
-        ,   600 as production_cost
+        ,   4.7110 as latitude
+        ,   -74.0721 as longitude
+        ,   to_geography('POINT (-74.0721 4.7110)') as long_lat
+        ,   'Bogotá' as city
+        ,   'Cundinamarca' as state
+        ,   'Colombia' as country
+        ,   12000 as production_capacity
+        ,   850 as production_cost
 union
     select
             1005 as id
         ,   '_Factory_2_' as name
-        ,   38.576668 as latitude
-        ,   -121.493629 as longitude
-        ,   to_geography('POINT (-121.493629 38.576668)') as long_lat
-        ,   'Sacramento' as city
-        ,   'California' as state
-        ,   'United States' as country
-        ,   11000 as production_capacity
-        ,   1100 as production_cost
+        ,   6.2442 as latitude
+        ,   -75.5812 as longitude
+        ,   to_geography('POINT (-75.5812 6.2442)') as long_lat
+        ,   'Medellín' as city
+        ,   'Antioquia' as state
+        ,   'Colombia' as country
+        ,   10000 as production_capacity
+        ,   780 as production_cost
 union
     select
             1010 as id
         ,   '_Factory_3_' as name
-        ,   39.739227 as latitude
-        ,   -104.984856 as longitude
-        ,   to_geography('POINT (-104.984856 39.739227)') as long_la
-        ,   'Denver' as city
-        ,   'Colorado' as state
-        ,   'United States' as country
-        ,   8500 as production_capacity
-        ,   750.5 as production_cost
+        ,   3.4516 as latitude
+        ,   -76.5320 as longitude
+        ,   to_geography('POINT (-76.5320 3.4516)') as long_lat
+        ,   'Cali' as city
+        ,   'Valle del Cauca' as state
+        ,   'Colombia' as country
+        ,   9500 as production_capacity
+        ,   720 as production_cost
 union
     select
             1015 as id
         ,   '_Factory_4_' as name
-        ,   30.438118 as latitude
-        ,   -84.281296 as longitude
-        ,   to_geography('POINT (-84.281296 30.438118)') as long_lat
-        ,   'Tallahassee' as city
-        ,   'Florida' as state
-        ,   'United States' as country
-        ,   7500 as production_capacity
-        ,   760 as production_cost
+        ,   10.9685 as latitude
+        ,   -74.7813 as longitude
+        ,   to_geography('POINT (-74.7813 10.9685)') as long_lat
+        ,   'Barranquilla' as city
+        ,   'Atlántico' as state
+        ,   'Colombia' as country
+        ,   8000 as production_capacity
+        ,   690 as production_cost
 union
     select
             1020 as id
         ,   '_Factory_5_' as name
-        ,   43.617775 as latitude
-        ,   -116.199722 as longitude
-        ,   to_geography('POINT (-116.199722 43.617775)') as long_lat
-        ,   'Boise' as city
-        ,   'Idaho' as state
-        ,   'United States' as country
-        ,   11000 as production_capacity
-        ,   690 as production_cost
+        ,   10.3910 as latitude
+        ,   -75.4794 as longitude
+        ,   to_geography('POINT (-75.4794 10.3910)') as long_lat
+        ,   'Cartagena' as city
+        ,   'Bolívar' as state
+        ,   'Colombia' as country
+        ,   7500 as production_capacity
+        ,   710 as production_cost
 union
     select
             1025 as id
         ,   '_Factory_6_' as name
-        ,   44.307167 as latitude
-        ,   -69.781693 as longitude
-        ,   to_geography('POINT (-69.781693 44.307167)') as long_lat
-        ,   'Augusta' as city
-        ,   'Maine' as state
-        ,   'United States' as country
-        ,   4100 as production_capacity
+        ,   7.1193 as latitude
+        ,   -73.1227 as longitude
+        ,   to_geography('POINT (-73.1227 7.1193)') as long_lat
+        ,   'Bucaramanga' as city
+        ,   'Santander' as state
+        ,   'Colombia' as country
+        ,   6500 as production_capacity
         ,   680 as production_cost
 union
     select
             1030 as id
         ,   '_Factory_7_' as name
-        ,   46.585709 as latitude
-        ,   -112.018417 as longitude
-        ,   to_geography('POINT (-112.018417 46.585709)') as long_lat
-        ,   'Helena' as city
-        ,   'Montana' as state
-        ,   'United States' as country
-        ,   6600 as production_capacity
-        ,   800 as production_cost
+        ,   4.8087 as latitude
+        ,   -75.6906 as longitude
+        ,   to_geography('POINT (-75.6906 4.8087)') as long_lat
+        ,   'Pereira' as city
+        ,   'Risaralda' as state
+        ,   'Colombia' as country
+        ,   5500 as production_capacity
+        ,   650 as production_cost
 union
     select
             1035 as id
         ,   '_Factory_8_' as name
-        ,   42.652843 as latitude
-        ,   -73.757874 as longitude
-        ,   to_geography('POINT (-73.757874 42.652843)') as long_lat
-        ,   'Albany' as city
-        ,   'New York' as state
-        ,   'United States' as country
-        ,   6000 as production_capacity
-        ,   1200 as production_cost
+        ,   5.0689 as latitude
+        ,   -75.5174 as longitude
+        ,   to_geography('POINT (-75.5174 5.0689)') as long_lat
+        ,   'Manizales' as city
+        ,   'Caldas' as state
+        ,   'Colombia' as country
+        ,   5000 as production_capacity
+        ,   630 as production_cost
 union
     select
             1050 as id
         ,   '_Factory_9_' as name
-        ,   30.27467 as latitude
-        ,   -97.740349 as longitude
-        ,   to_geography('POINT (-97.740349 30.27467)') as long_lat
-        ,   'Austin' as city
-        ,   'Texas' as state
-        ,   'United States' as country
-        ,   5200 as production_capacity
-        ,   750 as production_cost
+        ,   4.4389 as latitude
+        ,   -75.2322 as longitude
+        ,   to_geography('POINT (-75.2322 4.4389)') as long_lat
+        ,   'Ibagué' as city
+        ,   'Tolima' as state
+        ,   'Colombia' as country
+        ,   4500 as production_capacity
+        ,   600 as production_cost
         union
     select
             1045 as id
         ,   '_Factory_10_' as name
-        ,   34.000343 as latitude
-        ,   -81.033211 as longitude
-        ,   to_geography('POINT (-81.033211 34.000343)') as long_lat
-        ,   'Columbia' as city
-        ,   'South Carolina' as state
-        ,   'United States' as country
-        ,   4500 as production_capacity
-        ,   500 as production_cost
+        ,   4.1420 as latitude
+        ,   -73.6266 as longitude
+        ,   to_geography('POINT (-73.6266 4.1420)') as long_lat
+        ,   'Villavicencio' as city
+        ,   'Meta' as state
+        ,   'Colombia' as country
+        ,   4000 as production_capacity
+        ,   580 as production_cost
 ;'''
 distributor_sql = '''insert overwrite into supply_chain_network_optimization_db.entities.distributor
     select
             2000 as id
         ,   '_Distributor_1_' as name
-        ,   33.448143 as latitude
-        ,   -112.096962 as longitude
-        ,   to_geography('POINT (-112.096962 33.448143)') as long_lat
-        ,   'Phoenix' as city
-        ,   'Arizona' as state
-        ,   'United States' as country
-        ,   1500 as throughput_capacity
-        ,   7 as throughput_cost
+        ,   4.7110 as latitude
+        ,   -74.0721 as longitude
+        ,   to_geography('POINT (-74.0721 4.7110)') as long_lat
+        ,   'Bogotá' as city
+        ,   'Cundinamarca' as state
+        ,   'Colombia' as country
+        ,   3500 as throughput_capacity
+        ,   12 as throughput_cost
 union
     select
             2002 as id
         ,   '_Distributor_2_' as name
-        ,   33.749027 as latitude
-        ,   -84.388229 as longitude
-        ,   to_geography('POINT (-84.388229 33.749027)') as long_lat
-        ,   'Atlanta' as city
-        ,   'Georgia' as state
-        ,   'United States' as country
-        ,   1900 as throughput_capacity
-        ,   6 as throughput_cost
+        ,   6.2442 as latitude
+        ,   -75.5812 as longitude
+        ,   to_geography('POINT (-75.5812 6.2442)') as long_lat
+        ,   'Medellín' as city
+        ,   'Antioquia' as state
+        ,   'Colombia' as country
+        ,   2800 as throughput_capacity
+        ,   10 as throughput_cost
 union
     select
             2004 as id
         ,   '_Distributor_3_' as name
-        ,   39.768623 as latitude
-        ,   -86.162643 as longitude
-        ,   to_geography('POINT (-86.162643 39.768623)') as long_lat
-        ,   'Indianapolis' as city
-        ,   'Indiana' as state
-        ,   'United States' as country
-        ,   2200 as throughput_capacity
-        ,   5 as throughput_cost
+        ,   3.4516 as latitude
+        ,   -76.5320 as longitude
+        ,   to_geography('POINT (-76.5320 3.4516)') as long_lat
+        ,   'Cali' as city
+        ,   'Valle del Cauca' as state
+        ,   'Colombia' as country
+        ,   2600 as throughput_capacity
+        ,   9 as throughput_cost
 union
     select
             2006 as id
         ,   '_Distributor_4_' as name
-        ,   38.186722 as latitude
-        ,   -84.875374 as longitude
-        ,   to_geography('POINT (-84.875374 38.186722)') as long_lat
-        ,   'Frankfort' as city
-        ,   'Kentucky' as state
-        ,   'United States' as country
-        ,   800 as throughput_capacity
-        ,   6 as throughput_cost
+        ,   10.9685 as latitude
+        ,   -74.7813 as longitude
+        ,   to_geography('POINT (-74.7813 10.9685)') as long_lat
+        ,   'Barranquilla' as city
+        ,   'Atlántico' as state
+        ,   'Colombia' as country
+        ,   2200 as throughput_capacity
+        ,   8 as throughput_cost
 union
     select
             2008 as id
         ,   '_Distributor_5_' as name
-        ,   42.358162 as latitude
-        ,   -71.063698 as longitude
-        ,   to_geography('POINT (-71.063698 42.358162)') as long_lat
-        ,   'Boston' as city
-        ,   'Massachusetts' as state
-        ,   'United States' as country
-        ,   2700 as throughput_capacity
-        ,   25 as throughput_cost
+        ,   10.3910 as latitude
+        ,   -75.4794 as longitude
+        ,   to_geography('POINT (-75.4794 10.3910)') as long_lat
+        ,   'Cartagena' as city
+        ,   'Bolívar' as state
+        ,   'Colombia' as country
+        ,   2000 as throughput_capacity
+        ,   8 as throughput_cost
 union
     select
             2010 as id
         ,   '_Distributor_6_' as name
-        ,   32.303848 as latitude
-        ,   -90.182106 as longitude
-        ,   to_geography('POINT (-90.182106 32.303848)') as long_lat
-        ,   'Jackson' as city
-        ,   'Mississippi' as state
-        ,   'United States' as country
+        ,   7.1193 as latitude
+        ,   -73.1227 as longitude
+        ,   to_geography('POINT (-73.1227 7.1193)') as long_lat
+        ,   'Bucaramanga' as city
+        ,   'Santander' as state
+        ,   'Colombia' as country
         ,   1800 as throughput_capacity
-        ,   4 as throughput_cost
+        ,   7 as throughput_cost
 union
     select
             2012 as id
         ,   '_Distributor_7_' as name
-        ,   40.808075 as latitude
-        ,   -96.699654 as longitude
-        ,   to_geography('POINT (-96.699654 40.808075)') as long_lat
-        ,   'Lincoln' as city
-        ,   'Nebraska' as state
-        ,   'United States' as country
-        ,   1200 as throughput_capacity
-        ,   8 as throughput_cost
+        ,   4.8087 as latitude
+        ,   -75.6906 as longitude
+        ,   to_geography('POINT (-75.6906 4.8087)') as long_lat
+        ,   'Pereira' as city
+        ,   'Risaralda' as state
+        ,   'Colombia' as country
+        ,   1500 as throughput_capacity
+        ,   6 as throughput_cost
 union
     select
             2014 as id
         ,   '_Distributor_8_' as name
-        ,   43.206898 as latitude
-        ,   -71.537994 as longitude
-        ,   to_geography('POINT (-71.537994 43.206898)') as long_lat
-        ,   'Concord' as city
-        ,   'New Hampshire' as state
-        ,   'United States' as country
-        ,   1900 as throughput_capacity
-        ,   15 as throughput_cost
+        ,   5.0689 as latitude
+        ,   -75.5174 as longitude
+        ,   to_geography('POINT (-75.5174 5.0689)') as long_lat
+        ,   'Manizales' as city
+        ,   'Caldas' as state
+        ,   'Colombia' as country
+        ,   1400 as throughput_capacity
+        ,   6 as throughput_cost
 union
     select
             2016 as id
         ,   '_Distributor_9_' as name
-        ,   40.220596 as latitude
-        ,   -74.769913 as longitude
-        ,   to_geography('POINT (-74.769913 40.220596)') as long_lat
-        ,   'Trenton' as city
-        ,   'New Jersey' as state
-        ,   'United States' as country
-        ,   2300 as throughput_capacity
-        ,   12 as throughput_cost
+        ,   4.4389 as latitude
+        ,   -75.2322 as longitude
+        ,   to_geography('POINT (-75.2322 4.4389)') as long_lat
+        ,   'Ibagué' as city
+        ,   'Tolima' as state
+        ,   'Colombia' as country
+        ,   1300 as throughput_capacity
+        ,   5 as throughput_cost
 union
     select
             2018 as id
         ,   '_Distributor_10_' as name
-        ,   35.68224 as latitude
-        ,   -105.939728 as longitude
-        ,   to_geography('POINT (-105.939728 35.68224)') as long_lat
-        ,   'Santa Fe' as city
-        ,   'New Mexico' as state
-        ,   'United States' as country
-        ,   2450 as throughput_capacity
-        ,   6 as throughput_cost
+        ,   4.1420 as latitude
+        ,   -73.6266 as longitude
+        ,   to_geography('POINT (-73.6266 4.1420)') as long_lat
+        ,   'Villavicencio' as city
+        ,   'Meta' as state
+        ,   'Colombia' as country
+        ,   1200 as throughput_capacity
+        ,   5 as throughput_cost
 union
     select
             2020 as id
         ,   '_Distributor_11_' as name
-        ,   46.82085 as latitude
-        ,   -100.783318 as longitude
-        ,   to_geography('POINT (-100.783318 46.82085)') as long_lat
-        ,   'Bismarck' as city
-        ,   'North Dakota' as state
-        ,   'United States' as country
-        ,   900 as throughput_capacity
-        ,   5 as throughput_cost
+        ,   11.2408 as latitude
+        ,   -74.1990 as longitude
+        ,   to_geography('POINT (-74.1990 11.2408)') as long_lat
+        ,   'Santa Marta' as city
+        ,   'Magdalena' as state
+        ,   'Colombia' as country
+        ,   1100 as throughput_capacity
+        ,   7 as throughput_cost
 union
     select
             2022 as id
         ,   '_Distributor_12_' as name
-        ,   39.961346 as latitude
-        ,   -82.999069 as longitude
-        ,   to_geography('POINT (-82.999069 39.961346)') as long_lat
-        ,   'Columbus' as city
-        ,   'Ohio' as state
-        ,   'United States' as country
-        ,   1500 as throughput_capacity
-        ,   4.5 as throughput_cost
+        ,   8.7500 as latitude
+        ,   -75.8814 as longitude
+        ,   to_geography('POINT (-75.8814 8.7500)') as long_lat
+        ,   'Montería' as city
+        ,   'Córdoba' as state
+        ,   'Colombia' as country
+        ,   1000 as throughput_capacity
+        ,   6 as throughput_cost
 union
     select
             2024 as id
         ,   '_Distributor_13_' as name
-        ,   35.492207 as latitude
-        ,   -97.503342 as longitude
-        ,   to_geography('POINT (-97.503342 35.492207)') as long_lat
-        ,   'Oklahoma City' as city
-        ,   'Oklahoma' as state
-        ,   'United States' as country
-        ,   700 as throughput_capacity
-        ,   4 as throughput_cost
+        ,   9.3077 as latitude
+        ,   -75.3975 as longitude
+        ,   to_geography('POINT (-75.3975 9.3077)') as long_lat
+        ,   'Sincelejo' as city
+        ,   'Sucre' as state
+        ,   'Colombia' as country
+        ,   800 as throughput_capacity
+        ,   5 as throughput_cost
 union
     select
             2026 as id
         ,   '_Distributor_14_' as name
-        ,   35.78043 as latitude
-        ,   -78.639099 as longitude
-        ,   to_geography('POINT (-78.639099 35.78043)') as long_lat
-        ,   'Raleigh' as city
-        ,   'North Carolina' as state
-        ,   'United States' as country
-        ,   4900 as throughput_capacity
-        ,   7 as throughput_cost
+        ,   8.3114 as latitude
+        ,   -73.3475 as longitude
+        ,   to_geography('POINT (-73.3475 8.3114)') as long_lat
+        ,   'Valledupar' as city
+        ,   'Cesar' as state
+        ,   'Colombia' as country
+        ,   900 as throughput_capacity
+        ,   6 as throughput_cost
 union
     select
             2028 as id
         ,   '_Distributor_15_' as name
-        ,   44.367031 as latitude
-        ,   -100.346405 as longitude
-        ,   to_geography('POINT (-100.346405 44.367031)') as long_lat
-        ,   'Pierre' as city
-        ,   'South Dakota' as state
-        ,   'United States' as country
-        ,   4000 as throughput_capacity
-        ,   6 as throughput_cost
+        ,   2.9273 as latitude
+        ,   -75.2819 as longitude
+        ,   to_geography('POINT (-75.2819 2.9273)') as long_lat
+        ,   'Neiva' as city
+        ,   'Huila' as state
+        ,   'Colombia' as country
+        ,   1100 as throughput_capacity
+        ,   5 as throughput_cost
 union
     select
             2030 as id
         ,   '_Distributor_16_' as name
-        ,   44.262436 as latitude
-        ,   -72.580536 as longitude
-        ,   to_geography('POINT (-72.580536 44.262436)') as long_lat
-        ,   'Montpelier' as city
-        ,   'Vermont' as state
-        ,   'United States' as country
-        ,   3400 as throughput_capacity
-        ,   11 as throughput_cost
+        ,   2.4448 as latitude
+        ,   -76.6147 as longitude
+        ,   to_geography('POINT (-76.6147 2.4448)') as long_lat
+        ,   'Popayán' as city
+        ,   'Cauca' as state
+        ,   'Colombia' as country
+        ,   800 as throughput_capacity
+        ,   5 as throughput_cost
 union
     select
             2032 as id
         ,   '_Distributor_17_' as name
-        ,   37.538857 as latitude
-        ,   -77.43364 as longitude
-        ,   to_geography('POINT (-77.43364 37.538857)') as long_lat
-        ,   'Richmond' as city
-        ,   'Virginia' as state
-        ,   'United States' as country
-        ,   1650 as throughput_capacity
-        ,   9 as throughput_cost
+        ,   1.2136 as latitude
+        ,   -77.2811 as longitude
+        ,   to_geography('POINT (-77.2811 1.2136)') as long_lat
+        ,   'Pasto' as city
+        ,   'Nariño' as state
+        ,   'Colombia' as country
+        ,   900 as throughput_capacity
+        ,   6 as throughput_cost
 union
     select
             2034 as id
         ,   '_Distributor_18_' as name
-        ,   47.035805 as latitude
-        ,   -122.905014 as longitude
-        ,   to_geography('POINT (-122.905014 47.035805)') as long_lat
-        ,   'Olympia' as city
-        ,   'Washington' as state
-        ,   'United States' as country
-        ,   400 as throughput_capacity
-        ,   18 as throughput_cost
+        ,   5.3350 as latitude
+        ,   -72.3958 as longitude
+        ,   to_geography('POINT (-72.3958 5.3350)') as long_lat
+        ,   'Tunja' as city
+        ,   'Boyacá' as state
+        ,   'Colombia' as country
+        ,   700 as throughput_capacity
+        ,   4 as throughput_cost
 union
     select
             2036 as id
         ,   '_Distributor_19_' as name
-        ,   38.336246 as latitude
-        ,   -81.612328 as longitude
-        ,   to_geography('POINT (-81.612328 38.336246)') as long_lat
-        ,   'Charleston' as city
-        ,   'West Virginia' as state
-        ,   'United States' as country
-        ,   2450 as throughput_capacity
-        ,   16 as throughput_cost
+        ,   6.2518 as latitude
+        ,   -67.5069 as longitude
+        ,   to_geography('POINT (-67.5069 6.2518)') as long_lat
+        ,   'Puerto Carreño' as city
+        ,   'Vichada' as state
+        ,   'Colombia' as country
+        ,   400 as throughput_capacity
+        ,   3 as throughput_cost
 union
     select
             2038 as id
         ,   '_Distributor_20_' as name
-        ,   43.074684 as latitude
-        ,   -89.384445 as longitude
-        ,   to_geography('POINT (-89.384445 43.074684)') as long_lat
-        ,   'Madison' as city
-        ,   'Wisconsin' as state
-        ,   'United States' as country
-        ,   1900 as throughput_capacity
-        ,   11 as throughput_cost
+        ,   5.3350 as latitude
+        ,   -72.3958 as longitude
+        ,   to_geography('POINT (-72.3958 5.3350)') as long_lat
+        ,   'Yopal' as city
+        ,   'Casanare' as state
+        ,   'Colombia' as country
+        ,   600 as throughput_capacity
+        ,   4 as throughput_cost
 union
     select
             2040 as id
         ,   '_Distributor_21_' as name
-        ,   41.140259 as latitude
-        ,   -104.820236 as longitude
-        ,   to_geography('POINT (-104.820236 41.140259)') as long_lat
-        ,   'Cheyenne' as city
-        ,   'Wyoming' as state
-        ,   'United States' as country
-        ,   2250 as throughput_capacity
-        ,   7 as throughput_cost
+        ,   7.0669 as latitude
+        ,   -70.7616 as longitude
+        ,   to_geography('POINT (-70.7616 7.0669)') as long_lat
+        ,   'Arauca' as city
+        ,   'Arauca' as state
+        ,   'Colombia' as country
+        ,   500 as throughput_capacity
+        ,   3 as throughput_cost
 union
     select
             2042 as id
         ,   '_Distributor_22_' as name
-        ,   34.746613 as latitude
-        ,   -92.288986 as longitude
-        ,   to_geography('POINT (-92.288986 34.746613)') as long_lat
-        ,   'Little Rock' as city
-        ,   'Arkansas' as state
-        ,   'United States' as country
-        ,   3600 as throughput_capacity
-        ,   5 as throughput_cost
+        ,   1.6144 as latitude
+        ,   -75.6062 as longitude
+        ,   to_geography('POINT (-75.6062 1.6144)') as long_lat
+        ,   'Florencia' as city
+        ,   'Caquetá' as state
+        ,   'Colombia' as country
+        ,   600 as throughput_capacity
+        ,   4 as throughput_cost
 union
     select
             2044 as id
         ,   '_Distributor_23_' as name
-        ,   39.157307 as latitude
-        ,   -75.519722 as longitude
-        ,   to_geography('POINT (-75.519722 39.157307)') as long_lat
-        ,   'Dover' as city
-        ,   'Delaware' as state
-        ,   'United States' as country
-        ,   4200 as throughput_capacity
-        ,   16 as throughput_cost
+        ,   0.8333 as latitude
+        ,   -76.2500 as longitude
+        ,   to_geography('POINT (-76.2500 0.8333)') as long_lat
+        ,   'Mocoa' as city
+        ,   'Putumayo' as state
+        ,   'Colombia' as country
+        ,   400 as throughput_capacity
+        ,   3 as throughput_cost
 union
     select
             2046 as id
         ,   '_Distributor_24_' as name
-        ,   21.307442 as latitude
-        ,   -157.857376 as longitude
-        ,   to_geography('POINT (-157.857376 21.307442)') as long_lat
-        ,   'Honolulu' as city
-        ,   'Hawaii' as state
-        ,   'United States' as country
-        ,   3500 as throughput_capacity
-        ,   25 as throughput_cost
+        ,   -4.2158 as latitude
+        ,   -69.9406 as longitude
+        ,   to_geography('POINT (-69.9406 -4.2158)') as long_lat
+        ,   'Leticia' as city
+        ,   'Amazonas' as state
+        ,   'Colombia' as country
+        ,   300 as throughput_capacity
+        ,   2 as throughput_cost
 union
     select
             2048 as id
         ,   '_Distributor_25_' as name
-        ,   41.591087 as latitude
-        ,   -93.603729 as longitude
-        ,   to_geography('POINT (-93.603729 41.591087)') as long_lat
-        ,   'Des Moines' as city
-        ,   'Iowa' as state
-        ,   'United States' as country
-        ,   4700 as throughput_capacity
-        ,   8 as throughput_cost
+        ,   5.6910 as latitude
+        ,   -76.6608 as longitude
+        ,   to_geography('POINT (-76.6608 5.6910)') as long_lat
+        ,   'Quibdó' as city
+        ,   'Chocó' as state
+        ,   'Colombia' as country
+        ,   500 as throughput_capacity
+        ,   4 as throughput_cost
 ;'''
 fact_to_dist_sql = '''insert overwrite into supply_chain_network_optimization_db.relationships.factory_to_distributor_rates
 with mileage as
@@ -1669,11 +1669,11 @@ from supply_chain_network_optimization_db.entities.factory'''
         }
 
         prompt_examples = {
-                "Closest Airport": """A factory is located in Springfield, Illinois, United States at latitude 39.798363 and longitude -89.654961.  Given that latitude and longitude represent geographic coordinates, what is the closest airport?  You are only allowed to respond with the name of the airport, nothing more.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence."""
-            ,   "Closest Interstate": """A factory is located in Springfield, Illinois, United States at latitude 39.798363 and longitude -89.654961.  Given that latitude and longitude represent geographic coordinates, what is the closest interstate?  You are only allowed to respond with the name of the interstate, nothing more.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence."""
-            ,   "Closest River": """A factory is located in Springfield, Illinois, United States at latitude 39.798363 and longitude -89.654961.  Given that latitude and longitude represent geographic coordinates, what is the closest river?  You are only allowed to respond with the name of the river, nothing more.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Simply respond with the name of the river."""
-            ,   "Average Temperature": """A factory is located in Springfield, Illinois, United States at latitude 39.798363 and longitude -89.654961.  Given that latitude and longitude represent geographic coordinates, what is the average annual temperature in fahrenheit?  Format your answer as a number without text.  Do not include celsius.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Only reply with a number."""
-            ,   "Average Rainfall": """A factory is located in Springfield, Illinois, United States at latitude 39.798363 and longitude -89.654961.  Given that latitude and longitude represent geographic coordinates, what is the average annual rainfall in inches?  Format your answer as a number without text.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Only reply with a number."""
+                "Aeropuerto Más Cercano": """Una fábrica está ubicada en Bogotá, Cundinamarca, Colombia en latitud 4.7110 y longitud -74.0721. Dadas esas coordenadas geográficas, ¿cuál es el aeropuerto más cercano? Solo puedes responder con el nombre del aeropuerto, nada más. No expliques la respuesta. No agregues comentarios. No incluyas una nota. No respondas en una oración."""
+            ,   "Autopista Más Cercana": """Una fábrica está ubicada en Bogotá, Cundinamarca, Colombia en latitud 4.7110 y longitud -74.0721. Dadas esas coordenadas geográficas, ¿cuál es la autopista más cercana? Solo puedes responder con el nombre de la autopista, nada más. No expliques la respuesta. No agregues comentarios. No incluyas una nota. No respondas en una oración."""
+            ,   "Río Más Cercano": """Una fábrica está ubicada en Bogotá, Cundinamarca, Colombia en latitud 4.7110 y longitud -74.0721. Dadas esas coordenadas geográficas, ¿cuál es el río más cercano? Solo puedes responder con el nombre del río, nada más. No expliques la respuesta. No agregues comentarios. No incluyas una nota. No respondas en una oración. Simplemente responde con el nombre del río."""
+            ,   "Temperatura Promedio": """Una fábrica está ubicada en Bogotá, Cundinamarca, Colombia en latitud 4.7110 y longitud -74.0721. Dadas esas coordenadas geográficas, ¿cuál es la temperatura anual promedio en grados Celsius? Formatea tu respuesta como un número sin texto. No incluyas Fahrenheit. No expliques la respuesta. No agregues comentarios. No incluyas una nota. No respondas en una oración. Solo responde con un número."""
+            ,   "Precipitación Promedio": """Una fábrica está ubicada en Bogotá, Cundinamarca, Colombia en latitud 4.7110 y longitud -74.0721. Dadas esas coordenadas geográficas, ¿cuál es la precipitación anual promedio en milímetros? Formatea tu respuesta como un número sin texto. No expliques la respuesta. No agregues comentarios. No incluyas una nota. No respondas en una oración. Solo responde con un número."""
         }
 
         col1, col2 = st.columns((6, 1))
