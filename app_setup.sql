@@ -50,26 +50,26 @@ drop schema if exists supply_chain_network_optimization_db.public;
 /* tablas de entidades */
 create or replace table supply_chain_network_optimization_db.entities.factory comment='{"origin":"sf_sit","name":"scno","version":{"major":1, "minor":0},"attributes":{"component":"scno"}}' (
 	ID NUMBER(4,0),
-	NAME VARCHAR(12),
+	NAME VARCHAR(20),
 	LATITUDE NUMBER(8,6),
 	LONGITUDE NUMBER(9,6),
 	LONG_LAT GEOGRAPHY,
-	CITY VARCHAR(11),
-	STATE VARCHAR(14),
-	COUNTRY VARCHAR(13),
+	CITY VARCHAR(20),
+	STATE VARCHAR(25),
+	COUNTRY VARCHAR(15),
 	PRODUCTION_CAPACITY NUMBER(5,0),
 	PRODUCTION_COST NUMBER(9,5)
 );
 
 create or replace table supply_chain_network_optimization_db.entities.distributor comment='{"origin":"sf_sit","name":"scno","version":{"major":1, "minor":0},"attributes":{"component":"scno"}}' (
 	ID NUMBER(4,0),
-	NAME VARCHAR(16),
+	NAME VARCHAR(25),
 	LATITUDE NUMBER(8,6),
 	LONGITUDE NUMBER(9,6),
 	LONG_LAT GEOGRAPHY,
-	CITY VARCHAR(13),
-	STATE VARCHAR(14),
-	COUNTRY VARCHAR(13),
+	CITY VARCHAR(20),
+	STATE VARCHAR(25),
+	COUNTRY VARCHAR(15),
 	THROUGHPUT_CAPACITY NUMBER(4,0),
 	THROUGHPUT_COST NUMBER(7,5)
 );
@@ -85,8 +85,8 @@ create or replace table supply_chain_network_optimization_db.entities.customer c
 
 /* tablas/vistas de relaciones */
 create or replace table supply_chain_network_optimization_db.relationships.factory_to_distributor_rates comment='{"origin":"sf_sit","name":"scno","version":{"major":1, "minor":0},"attributes":{"component":"scno"}}' (
-	FACTORY VARCHAR(12),
-	DISTRIBUTOR VARCHAR(16),
+	FACTORY VARCHAR(20),
+	DISTRIBUTOR VARCHAR(25),
 	MILEAGE FLOAT,
 	COST_FACTOR NUMBER(9,6),
 	FREIGHT_COST FLOAT
@@ -115,7 +115,7 @@ order by
 ;
 
 create or replace table supply_chain_network_optimization_db.relationships.distributor_to_customer_rates comment='{"origin":"sf_sit","name":"scno","version":{"major":1, "minor":0},"attributes":{"component":"scno"}}' (
-	DISTRIBUTOR VARCHAR(16),
+	DISTRIBUTOR VARCHAR(25),
 	CUSTOMER VARCHAR(16777216),
 	MILEAGE FLOAT,
 	COST_FACTOR NUMBER(9,6),
