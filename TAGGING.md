@@ -1,15 +1,15 @@
-# Etiquetado
-El Equipo de Innovación de Soluciones proporciona marcos, aceleradores y otras piezas de código de muestra a los clientes a través de múltiples canales, desde compromisos específicos 1:1 hasta código abierto público. Como parte de nuestro proceso de mejora continua para todo nuestro código, revisamos cómo nuestros clientes están aprovechando estas herramientas, cómo está funcionando ese código, y qué funcionalidad podría necesitar ser actualizada y alineada con el producto principal de Snowflake. Aunque nuestro etiquetado de objetos y sesiones está destinado a proporcionar mejoras de vuelta a nuestros clientes, también entendemos que no todos nuestros clientes mantendrán este etiquetado.
+# Tagging
+The Solution Innovation Team provides frameworks, accelerators, and other pieces of sample code to customers via multiple channels, ranging from specific 1:1 engagements to public open-source.  As part of our continual improvement process for all of our code, we review how our customers are leveraging these tools, how that code is performing, and what functionality might need to be updated and aligned with the Snowflake core product.  While our tagging of objects and sessions is meant to provide improvements back to our customers, we also understand that not all of our customers will maintain this tagging.
 
-Algunos de los beneficios para nuestros clientes por dejar el etiquetado en su lugar incluyen:
+Some of the benefits for our customers for leaving the tagging in place include:
 
-- Mejoras de rendimiento, optimización de costos, o funcionalidad adicional
-- Comunicación de correcciones, mejoras, o alineación con las características del producto Snowflake a los clientes que están aprovechando el código
+- Performance improvements, cost optimization, or additional functionality
+- Communication of fixes, improvements, or alignment to Snowflake product features to customers that are leveraging the code
 
-## Preguntas Frecuentes
-**P:** ¿Snowflake ve nuestros datos?
-**R:** Snowflake no tiene la capacidad de ver los datos del cliente, incluyendo datos contenidos en objetos que tienen estas etiquetas de comentario. Solo los datos de telemetría para los objetos en estas soluciones son visibles para Snowflake y se ven en agregado.
+## FAQ
+**Q:** Does Snowflake see our data?
+**A:** Snowflake does not have the ability to see customer’s data, including data contained in objects that have these comment tags.  Only telemetry data for the objects in these solutions are visible to Snowflake and viewed in aggregate.
 
 
-**P:** ¿Estas etiquetas afectan el rendimiento?
-**R:** Los comentarios de objetos y las Etiquetas de Consulta basadas en sesión no afectan el rendimiento.
+**Q:** Do these tags affect performance?
+**A:** Object comments and session-based Query Tags do not affect performance.

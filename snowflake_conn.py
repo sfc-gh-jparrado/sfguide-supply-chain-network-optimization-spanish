@@ -4,7 +4,7 @@ import os
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization
 
-# Carga la clave privada
+# Loads private key
 pkb = ""
 
 if st.secrets["local_key_path"] != "":
@@ -15,18 +15,18 @@ if st.secrets["local_key_path"] != "":
             backend=default_backend()
         )
 
-    # Almacena la clave pública
+    # Stores public key
     pkb = p_key.private_bytes(
         encoding=serialization.Encoding.DER,
         format=serialization.PrivateFormat.PKCS8,
         encryption_algorithm=serialization.NoEncryption())
 
 
-# Crear Sesión de Snowpark
+# Create Snowpark Session
 def init_snowpark_session(account):
     connection_parameters = dict(st.secrets[account])
 
-    # Agregar clave pública, si está presente
+    # Add public key, if present
     if pkb != "":
         connection_parameters["private_key"] = pkb
 

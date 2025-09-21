@@ -23,6 +23,7 @@ Todo el código de muestra se proporciona únicamente con fines de referencia. T
 Copyright (c) 2025 Snowflake Inc. Todos los Derechos Reservados.
 
 ## Problema(s) a Resolver
+
 Para nuestro modelo, somos una empresa grande con una gran red de fábricas, distribuidores y clientes. Queremos entregar productos de la manera más económica posible.
 
 Cada fábrica tiene su propio conjunto de capacidades de producción, costos de producción y costos de flete. Cada Distribuidor tiene su propio conjunto de capacidades de rendimiento, costos de rendimiento y costos de flete. Cada cliente tiene un conjunto de demanda. El flete es un producto cruzado entre cada fábrica y distribuidor, y cada distribuidor y cliente. Estamos asumiendo que las Fábricas no pueden enviar directamente a los Clientes en este modelo - esto emula envíos a granel que probablemente salgan de las fábricas.
@@ -36,6 +37,7 @@ Estamos resolviendo el problema con tres objetivos diferentes... emulando un "ga
 - **Minimizar Cumplimiento Total** (Correr) - Emulando una capacidad de análisis de red completamente realizada, donde se consideran todos los costos de producción/rendimiento/flete. Esto es lo que sucede cuando se entiende y considera todo el negocio durante la planificación.
 
 ## Conclusiones
+
 **Minimizar Cumplimiento Total** presenta el plan de cumplimiento más óptimo y económico, incluso si algunas decisiones individuales parecen no tener sentido en aislamiento. Cualquier desviación del plan incurrirá en costos adicionales. Esto *no* significa que este modelo sea completamente factible en la realidad, pero cualquier intento de hacer coincidir el negocio con él mejorará los costos.
 
 Este también es un modelo de optimización de costos... asume que tienes que enviar a cada cliente su demanda, incluso si es un envío que genera pérdidas. Para convertirlo a "¿a qué clientes debería enviar?", ajustarías la función objetivo a un modelo de maximización de ganancias, y necesitarías vincular ingresos a él - primero agregando precio a cada cliente actual, y agregando cada cliente potencial que conozcas y estimaciones de su volumen/precio/costos de flete.
