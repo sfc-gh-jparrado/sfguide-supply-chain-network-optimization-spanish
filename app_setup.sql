@@ -9,6 +9,7 @@ RESUMEN DE CAMBIOS
 Fecha(yyyy-mm-dd)   Autor                              Comentarios
 ------------------- -------------------                 --------------------------------------------
 2024-03-26          B. Klein                            Creación Inicial
+2025-09-20          J. Parrado                          Actualizado para usar ACCOUNTADMIN en todo el proceso
 *************************************************************************************************************/
 
 /* configurar roles */
@@ -32,8 +33,8 @@ grant database role snowflake.cortex_user to role scno_role;
 grant role scno_role to role sysadmin;
 grant usage, operate on warehouse scno_wh to role scno_role;
 
-/* configurar objetos del lado del proveedor */
-use role scno_role;
+/* configurar objetos del lado del proveedor - usando ACCOUNTADMIN para evitar problemas de permisos */
+use role accountadmin;
 call system$wait(10);
 use warehouse scno_wh;
 
