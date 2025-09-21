@@ -1632,40 +1632,40 @@ class CortexPage(Page):
         closest_airport_sql = '''select
         id
     ,   snowflake.cortex.complete(
-        'llama2-70b-chat',
+        'claude-3-5-sonnet',
         concat('Una fábrica está ubicada en ', city, ', ', state, ', ', country, ' en latitud ', latitude, ' y longitud ', longitude, '.  Dadas esas coordenadas geográficas, ¿cuál es el aeropuerto más cercano?  Solo puedes responder con el nombre del aeropuerto, nada más.  No expliques la respuesta.  No agregues comentarios.  No incluyas una nota.  No respondas en una oración.')) as closest_airport
 from supply_chain_network_optimization_db.entities.factory'''
         closest_interstate_sql = '''select
         id
     ,   snowflake.cortex.complete(
-        'llama2-70b-chat',
+        'claude-3-5-sonnet',
         concat('A factory is located in ', city, ', ', state, ', ', country, ' at latitude ', latitude, ' and longitude ', longitude, '.  Given that latitude and longitude represent geographic coordinates, what is the closest interstate?  You are only allowed to respond with the name of the interstate, nothing more.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.')) as closest_interstate
 from supply_chain_network_optimization_db.entities.factory'''
         closest_river_sql = '''select
         id
     ,   snowflake.cortex.complete(
-        'llama2-70b-chat',
+        'claude-3-5-sonnet',
         concat('A factory is located in ', city, ', ', state, ', ', country, ' at latitude ', latitude, ' and longitude ', longitude, '.  Given that latitude and longitude represent geographic coordinates, what is the closest river?  You are only allowed to respond with the name of the river, nothing more.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Simply respond with the name of the river.')) as closest_river
 from supply_chain_network_optimization_db.entities.factory'''
         average_temperature_sql = '''select
         id
     ,   regexp_substr(snowflake.cortex.complete(
-        'llama2-70b-chat',
+        'claude-3-5-sonnet',
         concat('A factory is located in ', city, ', ', state, ', ', country, ' at latitude ', latitude, ' and longitude ', longitude, '.  Given that latitude and longitude represent geographic coordinates, what is the average annual temperature in fahrenheit?  Format your answer as a number without text.  Do not include celsius.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Only reply with a number.')),'[0-9]{1,3}\\.?[0-9]?') as average_temperature
 from supply_chain_network_optimization_db.entities.factory'''
         average_rainfall_sql = '''select
         id
     ,   regexp_substr(snowflake.cortex.complete(
-        'llama2-70b-chat',
+        'claude-3-5-sonnet',
         concat('A factory is located in ', city, ', ', state, ', ', country, ' at latitude ', latitude, ' and longitude ', longitude, '.  Given that latitude and longitude represent geographic coordinates, what is the average annual rainfall in inches?  Format your answer as a number without text.  Do not explain the answer.  Do not add comments.  Do not include a note.  Do not reply in a sentence.  Only reply with a number.')),'[0-9]{1,4}\\.?[0-9]?') as average_rainfall
 from supply_chain_network_optimization_db.entities.factory'''
 
         sql_statements = {
-                "Closest Airport": closest_airport_sql
-            ,   "Closest Interstate": closest_interstate_sql
-            ,   "Closest River": closest_river_sql
-            ,   "Average Temperature": average_temperature_sql
-            ,   "Average Rainfall": average_rainfall_sql
+                "Aeropuerto Más Cercano": closest_airport_sql
+            ,   "Autopista Más Cercana": closest_interstate_sql
+            ,   "Río Más Cercano": closest_river_sql
+            ,   "Temperatura Promedio": average_temperature_sql
+            ,   "Precipitación Promedio": average_rainfall_sql
         }
 
         prompt_examples = {
@@ -1696,7 +1696,7 @@ from supply_chain_network_optimization_db.entities.factory'''
             st.subheader("Selección de Enriquecimiento")
 
             st.write("Elige qué campos te gustaría agregar a los datos de las fábricas.")
-            st.write("Los datos serán proporcionados a través de Cortex, usando el modelo llama2-70b-chat. Revisa el expansor abajo para ver los "
+            st.write("Los datos serán proporcionados a través de Cortex, usando el modelo Claude 3.5 Sonnet para obtener mejores resultados. Revisa el expansor abajo para ver los "
                      "prompts/consultas directamente.")
 
             add_closest_airport = st.checkbox("Aeropuerto Más Cercano", value=False)
