@@ -1253,10 +1253,13 @@ class DataPreparationPage(Page):
         def deploy_demo_data(customer_count, session):
             customer_list = []
             for i in range(0, customer_count):
-                coordinates_list = fake.local_latlng()
+                # Generar coordenadas específicamente dentro de Colombia
+                # Colombia: latitud aproximada -4.2 a 12.5, longitud aproximada -81.8 a -66.9
+                import random
+                lat = round(random.uniform(-4.2, 12.5), 6)
+                lon = round(random.uniform(-81.8, -66.9), 6)
+                coordinates_list = [str(lat), str(lon)]
                 cust_id = operator.add(i, 3001)
-                lat = coordinates_list[0]
-                lon = coordinates_list[1]
                 long_lat = "POINT (" + coordinates_list[1] + " " + coordinates_list[0] + ")"
                 name = str(fake.company()) + "_" + str(i)
                 demand = randint(1, 100)
@@ -1317,7 +1320,7 @@ class DataPreparationPage(Page):
             with st.spinner("Generando Datos Sintéticos de Clientes..."):
                 deploy_demo_data(customer_count, session)
                 df = pd.DataFrame(st.session_state.customer_data,
-                                  columns=["ID", "LONGITUDE", "LATITUDE", "LAT_LONG", "NAME", "DEMAND"])
+                                  columns=["ID", "NAME", "LONGITUDE", "LATITUDE", "LAT_LONG", "DEMAND"])
                 st.dataframe(df)
 
     def print_sidebar(self):
