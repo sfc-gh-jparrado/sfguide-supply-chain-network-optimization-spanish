@@ -321,7 +321,7 @@ fake = Faker()
 factories_sql = '''insert overwrite into supply_chain_network_optimization_db.entities.factory
     select
             1000 as id
-        ,   '_Factory_1_' as name
+        ,   'Fábrica Bogotá Norte' as name
         ,   4.7110 as latitude
         ,   -74.0721 as longitude
         ,   to_geography('POINT (-74.0721 4.7110)') as long_lat
@@ -333,7 +333,7 @@ factories_sql = '''insert overwrite into supply_chain_network_optimization_db.en
 union
     select
             1005 as id
-        ,   '_Factory_2_' as name
+        ,   'Fábrica Medellín Industrial' as name
         ,   6.2442 as latitude
         ,   -75.5812 as longitude
         ,   to_geography('POINT (-75.5812 6.2442)') as long_lat
@@ -345,7 +345,7 @@ union
 union
     select
             1010 as id
-        ,   '_Factory_3_' as name
+        ,   'Fábrica Cali Pacífico' as name
         ,   3.4516 as latitude
         ,   -76.5320 as longitude
         ,   to_geography('POINT (-76.5320 3.4516)') as long_lat
@@ -357,7 +357,7 @@ union
 union
     select
             1015 as id
-        ,   '_Factory_4_' as name
+        ,   'Fábrica Barranquilla Caribe' as name
         ,   10.9685 as latitude
         ,   -74.7813 as longitude
         ,   to_geography('POINT (-74.7813 10.9685)') as long_lat
@@ -369,7 +369,7 @@ union
 union
     select
             1020 as id
-        ,   '_Factory_5_' as name
+        ,   'Fábrica Cartagena Puerto' as name
         ,   10.3910 as latitude
         ,   -75.4794 as longitude
         ,   to_geography('POINT (-75.4794 10.3910)') as long_lat
@@ -381,7 +381,7 @@ union
 union
     select
             1025 as id
-        ,   '_Factory_6_' as name
+        ,   'Fábrica Bucaramanga Oriente' as name
         ,   7.1193 as latitude
         ,   -73.1227 as longitude
         ,   to_geography('POINT (-73.1227 7.1193)') as long_lat
@@ -393,7 +393,7 @@ union
 union
     select
             1030 as id
-        ,   '_Factory_7_' as name
+        ,   'Fábrica Pereira Cafetero' as name
         ,   4.8087 as latitude
         ,   -75.6906 as longitude
         ,   to_geography('POINT (-75.6906 4.8087)') as long_lat
@@ -405,7 +405,7 @@ union
 union
     select
             1035 as id
-        ,   '_Factory_8_' as name
+        ,   'Fábrica Manizales Central' as name
         ,   5.0689 as latitude
         ,   -75.5174 as longitude
         ,   to_geography('POINT (-75.5174 5.0689)') as long_lat
@@ -417,7 +417,7 @@ union
 union
     select
             1050 as id
-        ,   '_Factory_9_' as name
+        ,   'Fábrica Ibagué Sur' as name
         ,   4.4389 as latitude
         ,   -75.2322 as longitude
         ,   to_geography('POINT (-75.2322 4.4389)') as long_lat
@@ -429,7 +429,7 @@ union
         union
     select
             1045 as id
-        ,   '_Factory_10_' as name
+        ,   'Fábrica Villavicencio Llanos' as name
         ,   4.1420 as latitude
         ,   -73.6266 as longitude
         ,   to_geography('POINT (-73.6266 4.1420)') as long_lat
@@ -442,7 +442,7 @@ union
 distributor_sql = '''insert overwrite into supply_chain_network_optimization_db.entities.distributor
     select
             2000 as id
-        ,   '_Distributor_1_' as name
+        ,   'Centro Distribución Bogotá' as name
         ,   4.7110 as latitude
         ,   -74.0721 as longitude
         ,   to_geography('POINT (-74.0721 4.7110)') as long_lat
@@ -454,7 +454,7 @@ distributor_sql = '''insert overwrite into supply_chain_network_optimization_db.
 union
     select
             2002 as id
-        ,   '_Distributor_2_' as name
+        ,   'Centro Distribución Medellín' as name
         ,   6.2442 as latitude
         ,   -75.5812 as longitude
         ,   to_geography('POINT (-75.5812 6.2442)') as long_lat
@@ -466,7 +466,7 @@ union
 union
     select
             2004 as id
-        ,   '_Distributor_3_' as name
+        ,   'Centro Distribución Cali' as name
         ,   3.4516 as latitude
         ,   -76.5320 as longitude
         ,   to_geography('POINT (-76.5320 3.4516)') as long_lat
@@ -478,7 +478,7 @@ union
 union
     select
             2006 as id
-        ,   '_Distributor_4_' as name
+        ,   'Centro Distribución Barranquilla' as name
         ,   10.9685 as latitude
         ,   -74.7813 as longitude
         ,   to_geography('POINT (-74.7813 10.9685)') as long_lat
@@ -490,7 +490,7 @@ union
 union
     select
             2008 as id
-        ,   '_Distributor_5_' as name
+        ,   'Centro Distribución Cartagena' as name
         ,   10.3910 as latitude
         ,   -75.4794 as longitude
         ,   to_geography('POINT (-75.4794 10.3910)') as long_lat
@@ -502,7 +502,7 @@ union
 union
     select
             2010 as id
-        ,   '_Distributor_6_' as name
+        ,   'Centro Distribución Bucaramanga' as name
         ,   7.1193 as latitude
         ,   -73.1227 as longitude
         ,   to_geography('POINT (-73.1227 7.1193)') as long_lat
@@ -514,7 +514,7 @@ union
 union
     select
             2012 as id
-        ,   '_Distributor_7_' as name
+        ,   'Centro Distribución Pereira' as name
         ,   4.8087 as latitude
         ,   -75.6906 as longitude
         ,   to_geography('POINT (-75.6906 4.8087)') as long_lat
@@ -526,7 +526,7 @@ union
 union
     select
             2014 as id
-        ,   '_Distributor_8_' as name
+        ,   'Centro Distribución Manizales' as name
         ,   5.0689 as latitude
         ,   -75.5174 as longitude
         ,   to_geography('POINT (-75.5174 5.0689)') as long_lat
@@ -538,7 +538,7 @@ union
 union
     select
             2016 as id
-        ,   '_Distributor_9_' as name
+        ,   'Centro Distribución Ibagué' as name
         ,   4.4389 as latitude
         ,   -75.2322 as longitude
         ,   to_geography('POINT (-75.2322 4.4389)') as long_lat
@@ -550,7 +550,7 @@ union
 union
     select
             2018 as id
-        ,   '_Distributor_10_' as name
+        ,   'Centro Distribución Villavicencio' as name
         ,   4.1420 as latitude
         ,   -73.6266 as longitude
         ,   to_geography('POINT (-73.6266 4.1420)') as long_lat
@@ -562,7 +562,7 @@ union
 union
     select
             2020 as id
-        ,   '_Distributor_11_' as name
+        ,   'Centro Distribución Santa Marta' as name
         ,   11.2408 as latitude
         ,   -74.1990 as longitude
         ,   to_geography('POINT (-74.1990 11.2408)') as long_lat
@@ -574,7 +574,7 @@ union
 union
     select
             2022 as id
-        ,   '_Distributor_12_' as name
+        ,   'Centro Distribución Montería' as name
         ,   8.7500 as latitude
         ,   -75.8814 as longitude
         ,   to_geography('POINT (-75.8814 8.7500)') as long_lat
@@ -586,7 +586,7 @@ union
 union
     select
             2024 as id
-        ,   '_Distributor_13_' as name
+        ,   'Centro Distribución Sincelejo' as name
         ,   9.3077 as latitude
         ,   -75.3975 as longitude
         ,   to_geography('POINT (-75.3975 9.3077)') as long_lat
@@ -598,7 +598,7 @@ union
 union
     select
             2026 as id
-        ,   '_Distributor_14_' as name
+        ,   'Centro Distribución Valledupar' as name
         ,   8.3114 as latitude
         ,   -73.3475 as longitude
         ,   to_geography('POINT (-73.3475 8.3114)') as long_lat
@@ -610,7 +610,7 @@ union
 union
     select
             2028 as id
-        ,   '_Distributor_15_' as name
+        ,   'Centro Distribución Neiva' as name
         ,   2.9273 as latitude
         ,   -75.2819 as longitude
         ,   to_geography('POINT (-75.2819 2.9273)') as long_lat
@@ -622,7 +622,7 @@ union
 union
     select
             2030 as id
-        ,   '_Distributor_16_' as name
+        ,   'Centro Distribución Popayán' as name
         ,   2.4448 as latitude
         ,   -76.6147 as longitude
         ,   to_geography('POINT (-76.6147 2.4448)') as long_lat
@@ -634,7 +634,7 @@ union
 union
     select
             2032 as id
-        ,   '_Distributor_17_' as name
+        ,   'Centro Distribución Pasto' as name
         ,   1.2136 as latitude
         ,   -77.2811 as longitude
         ,   to_geography('POINT (-77.2811 1.2136)') as long_lat
@@ -646,7 +646,7 @@ union
 union
     select
             2034 as id
-        ,   '_Distributor_18_' as name
+        ,   'Centro Distribución Tunja' as name
         ,   5.3350 as latitude
         ,   -72.3958 as longitude
         ,   to_geography('POINT (-72.3958 5.3350)') as long_lat
@@ -658,7 +658,7 @@ union
 union
     select
             2036 as id
-        ,   '_Distributor_19_' as name
+        ,   'Centro Distribución Puerto Carreño' as name
         ,   6.2518 as latitude
         ,   -67.5069 as longitude
         ,   to_geography('POINT (-67.5069 6.2518)') as long_lat
@@ -670,7 +670,7 @@ union
 union
     select
             2038 as id
-        ,   '_Distributor_20_' as name
+        ,   'Centro Distribución Yopal' as name
         ,   5.3350 as latitude
         ,   -72.3958 as longitude
         ,   to_geography('POINT (-72.3958 5.3350)') as long_lat
@@ -682,7 +682,7 @@ union
 union
     select
             2040 as id
-        ,   '_Distributor_21_' as name
+        ,   'Centro Distribución Arauca' as name
         ,   7.0669 as latitude
         ,   -70.7616 as longitude
         ,   to_geography('POINT (-70.7616 7.0669)') as long_lat
@@ -694,7 +694,7 @@ union
 union
     select
             2042 as id
-        ,   '_Distributor_22_' as name
+        ,   'Centro Distribución Florencia' as name
         ,   1.6144 as latitude
         ,   -75.6062 as longitude
         ,   to_geography('POINT (-75.6062 1.6144)') as long_lat
@@ -706,7 +706,7 @@ union
 union
     select
             2044 as id
-        ,   '_Distributor_23_' as name
+        ,   'Centro Distribución Mocoa' as name
         ,   0.8333 as latitude
         ,   -76.2500 as longitude
         ,   to_geography('POINT (-76.2500 0.8333)') as long_lat
@@ -718,7 +718,7 @@ union
 union
     select
             2046 as id
-        ,   '_Distributor_24_' as name
+        ,   'Centro Distribución Leticia' as name
         ,   -4.2158 as latitude
         ,   -69.9406 as longitude
         ,   to_geography('POINT (-69.9406 -4.2158)') as long_lat
@@ -730,7 +730,7 @@ union
 union
     select
             2048 as id
-        ,   '_Distributor_25_' as name
+        ,   'Centro Distribución Quibdó' as name
         ,   5.6910 as latitude
         ,   -76.6608 as longitude
         ,   to_geography('POINT (-76.6608 5.6910)') as long_lat
@@ -1261,7 +1261,20 @@ class DataPreparationPage(Page):
                 coordinates_list = [str(lat), str(lon)]
                 cust_id = operator.add(i, 3001)
                 long_lat = "POINT (" + coordinates_list[1] + " " + coordinates_list[0] + ")"
-                name = str(fake.company()) + "_" + str(i)
+                # Generar nombres de empresas colombianas realistas
+                empresas_colombianas = [
+                    "Almacenes Éxito", "Grupo Nutresa", "Bavaria", "Postobón", "Alpina",
+                    "Colpatria", "Bancolombia", "Avianca", "Ecopetrol", "ISA",
+                    "Cementos Argos", "Corona", "Tecnoglass", "Procaps", "Grupo Aval",
+                    "Mineros", "Cemex Colombia", "Terpel", "Claro Colombia", "ETB",
+                    "EPM", "Gas Natural", "Codensa", "Emgesa", "Celsia",
+                    "Homecenter", "Falabella", "Carulla", "Olimpica", "Makro",
+                    "Drogas La Rebaja", "Copidrogas", "Cruz Verde", "Cafam", "Compensar",
+                    "Colfondos", "Protección", "Porvenir", "Skandia", "Sura"
+                ]
+                import random
+                base_name = random.choice(empresas_colombianas)
+                name = f"{base_name} Sucursal {i+1}"
                 demand = randint(1, 100)
                 customer_list.append([cust_id, name, lon, lat, long_lat, demand])
 
