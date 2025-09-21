@@ -49,7 +49,7 @@ Además de tomar un conjunto de decisiones óptimas para más de 25k decisiones,
 ## Instrucciones
 
 1. Ejecutar app_setup.sql como ACCOUNTADMIN en tu cuenta de Snowflake
-2. En Snowsight, establece tu rol a SCNO_ROLE, navega a Proyectos en la barra lateral izquierda, y selecciona Streamlit
+2. En Snowsight, mantén tu rol como ACCOUNTADMIN, navega a Proyectos en la barra lateral izquierda, y selecciona Streamlit
 3. Selecciona SUPPLY_CHAIN_NETWORK_OPTIMIZATION en tu lista de Aplicaciones Streamlit
 4. Sigue las instrucciones dentro de la aplicación
 

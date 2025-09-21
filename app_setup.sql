@@ -10,6 +10,7 @@ Fecha(yyyy-mm-dd)   Autor                              Comentarios
 ------------------- -------------------                 --------------------------------------------
 2024-03-26          B. Klein                            Creación Inicial
 2025-09-20          J. Parrado                          Actualizado para usar ACCOUNTADMIN en todo el proceso
+2025-09-20          J. Parrado                          Eliminado rol SCNO_ROLE - usando solo ACCOUNTADMIN
 *************************************************************************************************************/
 
 /* configurar roles */
@@ -17,21 +18,8 @@ use role accountadmin;
 call system$wait(10);
 create warehouse if not exists scno_wh WAREHOUSE_SIZE=SMALL comment='{"origin":"sf_sit","name":"scno","version":{"major":1, "minor":0},"attributes":{"component":"scno"}}';
 
-/* crear rol y agregar permisos requeridos por el rol para la instalación del framework */
-create role if not exists scno_role;
-
-/* realizar concesiones */
-grant create share on account to role scno_role;
-grant import share on account to role scno_role;
-grant create database on account to role scno_role with grant option;
-grant execute task on account to role scno_role;
-grant create application package on account to role scno_role;
-grant create application on account to role scno_role;
-grant create data exchange listing on account to role scno_role;
-/* agregar rol de base de datos cortex_user para usar Cortex */
-grant database role snowflake.cortex_user to role scno_role;
-grant role scno_role to role sysadmin;
-grant usage, operate on warehouse scno_wh to role scno_role;
+/* NOTA: Eliminada la creación del rol SCNO_ROLE - usando solo ACCOUNTADMIN para todo el proceso */
+/* ACCOUNTADMIN ya tiene todos los permisos necesarios, no se requiere rol adicional */
 
 /* configurar objetos del lado del proveedor - usando ACCOUNTADMIN para evitar problemas de permisos */
 use role accountadmin;
